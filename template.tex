@@ -1,0 +1,106 @@
+\documentclass{beamer}% http://ctan.org/pkg/beamer
+
+\input{preamble}
+
+
+
+\begin{document}
+
+\title{%
+\begin{tabular}{c}
+\\ 
+{\small Graduate Culinary Economics}\\
+Today's lecture is about: LETTUCE! \\
+\\
+{\small Author: Chef}
+\\
+{\small Kitchen HQ, Spring 2017}\\
+\\
+\end{tabular}%
+}
+\subtitle{Based on Oliver, Jamie (2012)}
+
+
+% First Page
+\frame{\titlepage} 
+
+\frame{\frametitle{Table of contents}\tableofcontents} 
+
+\section{preparing the ground}
+
+\begin{frame}{Title.}
+\begin{itemize}
+	\item hey
+	\item yes whats up mate.
+	\item \textbf{yes whats \red{up}} mate.
+	\begin{align}
+	x + y &= 3x^5	\label{eq:1}\\
+	\beta + y &= 3y^5	\nonumber
+	\end{align}
+
+ 	\item $x^2 + y^2 = z^2\label{eq:2}$	
+ 	\item \bblue{important} word.
+ 	\item \bred{very important} word.
+ 	\item That's a \link{link-label}{link!}
+	\item \hypertarget{link-return}{going on}
+ \end{itemize}
+\end{frame}
+
+\section{harvest}
+
+\begin{frame}{frame 2}
+\textbf{Let me say this first.}
+\begin{enumerate}
+	\item now this is \bluebox{key.}
+	\item and as this well, \citet{mortensen2005wage}
+\end{enumerate}
+\pause
+\vspace{.5cm}
+\textbf{Then, also:}
+\begin{itemize}
+	\item another \redbox{important} aspect.
+	\item another \cyanbox{one}.
+	\item \hypertarget{link-label}{links here.}
+	\item Going \link{link-return}{back.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{List Environments}
+\begin{midi}
+\item You have environments \verb!midi,mide,widei,widee!:
+\begin{enumerate}
+\item medium space itemize
+\item medium space enumerate
+\item wide space itemize
+\item wide space enumerate
+\end{enumerate}
+\end{midi}
+
+\end{frame}
+
+\begin{frame}[fragile]{color math}{cool}
+\begin{midi}
+\item you can do colored math with \verb!$\blue{\alpha}$!: $\blue{\alpha}$
+\item for now there is only \blue{blue} and \red{red}.
+\end{midi}
+
+
+\end{frame}
+
+
+\section{Dinner}
+
+\begin{frame}{frame 3}
+\begin{enumerate}
+	\item We ate all of it
+	\item And then some more.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+        \frametitle{References}
+		\bibliographystyle{abbrvnat}
+		\bibliography{refs.bib}
+\end{frame}
+
+\end{document}
